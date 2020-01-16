@@ -15,7 +15,7 @@ app.use(cors());
 app.use(express.json());
 
 app.get("/api/greeting", (req, res) => {
-  res.json(`Hello, ${req.queryname}! How are you?`);
+  res.json(`Hello, ${req.query.name}! How are you?`);
 });
 
 app.use((req, res) => {
