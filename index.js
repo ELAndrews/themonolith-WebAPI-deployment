@@ -10,6 +10,8 @@ const port =
 
 const app = express();
 
+app.use(express.static("./client/build"));
+
 app.use(helment());
 app.use(cors());
 app.use(express.json());
